@@ -1,0 +1,22 @@
+	<p> 
+		Player 1 name: <%= "#{session["player1"].name}"%><br>
+		Score: <%= "#{session["player1"].score}"  %>
+	</p>
+	<p> 
+		Player 2 name: <%= "#{session["player2"].name}"%><br>
+		Score: <%= "#{session["player2"].score}"  %>
+	</p>
+
+	<p>Would you like to play another for best of 5?</p>
+
+<a href="/">Yes</a>
+<br>
+<br>
+<a href="/RoShamBo">No</a>
+
+<!-- 
+<form action = "/get_player2_info" method = "get">
+	<input type= "button" name = "yorn" value = "yes">
+	<input type= "button" name = "yorn" value = "no">
+</form> 
+ -->

@@ -1,0 +1,19 @@
+<form action = "/get_player1_info" method = "get">
+	<p> 
+		Player 1 name: <%= "#{session["player1"].name}"%><br>
+		Score: <%= "#{session["player1"].score}"  %>
+	</p>
+	<p> With Player 1 not looking: Player 2 please enter:</p>
+	<label>Player 2 name: </label>
+	<input type="text" name="player2name">
+	<br>
+
+  	<input type="radio" name="weapon" value="rock"> Rock<br>
+  	<input type="radio" name="weapon" value="paper"> Paper<br>
+  	<input type="radio" name="weapon" value="scissors"> Scissors<br>
+
+	<input type= "submit"=>
+	<br>
+	
+</form> 
+

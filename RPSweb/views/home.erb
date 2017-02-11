@@ -1,0 +1,30 @@
+<% if session["tie"] = true %>
+<%  "<p>The result was a tie, try again!</p>" %>
+<%end%>
+
+<% if session["player1"].name != nil %>
+<%	"<p>Player 1 name: #{session["player1"].name} <br>  %>
+<%		Score: #{session["player1"].score}</p>" %>
+<% end%>
+
+<% if session["player2"].name != nil %>
+<%	"<p> %>
+<%		Player 2 name: #{session["player2"].name} <br>  %>
+<%		Score: #{session["player2"].score}  %>
+<%	</p>"  %>
+<% end%>
+
+<form action = "/home" method = "get">
+	<p> With Player 2 not looking: Player 1 please enter:</p>
+	<label>Player 1 name: </label>
+	<input type="text" name="player1name">
+	<br>
+
+  	<input type="radio" name="weapon" value="rock"> Rock<br>
+  	<input type="radio" name="weapon" value="paper"> Paper<br>
+  	<input type="radio" name="weapon" value="scissors"> Scissors<br>
+
+	<input type= "submit"=>
+
+	<br>
+</form> 
